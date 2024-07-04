@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Tables</title>
+  </head>
+  <body>
+    <!-- Normal Table -->
+    <div>
+      <p>Normal Table</p>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Password</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Abdaurhman</td>
+          <td>*********</td>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Abdaurhman</td>
+          <td>*********</td>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Abdaurhman</td>
+          <td>*********</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ColSpan Table -->
+    <div>
+      <p>ColSpan Table</p>
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>57</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- RowSpan Table -->
+    <div>
+      <p>RowSpan Table</p>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+        </tr>
+      </table>
+    </div>
+
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </body>
+</html>
