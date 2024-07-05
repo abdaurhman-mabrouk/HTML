@@ -6,6 +6,14 @@
     <title>HTML - Tables</title>
   </head>
   <body>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
     <!-- Normal Table -->
     <div>
       <p>Normal Table</p>
@@ -72,13 +80,131 @@
       </table>
     </div>
 
-    <style>
-      table,
-      tr,
-      th,
-      td {
-        border: 1px solid black;
-      }
-    </style>
+    <!-- Table With ColGroup -->
+    <div>
+      <p>Table With colgroup Element</p>
+
+      <table>
+        <colgroup>
+          <col span="2" style="background-color: yellow" />
+          <col span="1" style="background-color: red" />
+        </colgroup>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Doe@table.html</td>
+          <td>*******</td>
+        </tr>
+        <tr>
+          <td>gas</td>
+          <td>sodal@table.html</td>
+          <td>*******</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Table With Herzional Zebra Stripes -->
+    <div>
+      <p>Table With Herzional Zebra Stripes</p>
+      <table id="hZebra">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>fobie</td>
+          <td>43</td>
+          <td>RU</td>
+        </tr>
+        <tr>
+          <td>kandy</td>
+          <td>23</td>
+          <td>KR</td>
+        </tr>
+        <tr>
+          <td>soze</td>
+          <td>12</td>
+          <td>USA</td>
+        </tr>
+      </table>
+      <style>
+        table#hZebra tr:nth-child(even) {
+          background-color: aquamarine;
+        }
+      </style>
+    </div>
+
+    <!-- Table With Vertical Zebra Stripes -->
+    <div>
+      <p>Table With Vertical Zebra Stripes</p>
+
+      <table id="vZebra">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+          <th>Tel</th>
+        </tr>
+        <tr>
+          <td>loly</td>
+          <td>6</td>
+          <td>GER</td>
+          <td>37457-4354</td>
+        </tr>
+        <tr>
+          <td>michel</td>
+          <td>30</td>
+          <td>FR</td>
+          <td>2423-4234</td>
+        </tr>
+      </table>
+      <style>
+        table#vZebra td:nth-child(even),
+        th:nth-child(even) {
+          background-color: aquamarine;
+        }
+      </style>
+    </div>
+
+    <!-- Table With Combine Vertical and Horizontal Zebra Stripes -->
+    <div>
+      <p>Table With Combine Vertical and Horizontal Zebra Stripes</p>
+
+      <table id="combien">
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>Z</th>
+          <th>W</th>
+        </tr>
+        <tr>
+          <td>434.234</td>
+          <td>12.65</td>
+          <td>2345.6547</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>21.44</td>
+          <td>453.21</td>
+          <td>12.07</td>
+          <td>33</td>
+        </tr>
+      </table>
+      <style>
+        tr:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),
+        td:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+      </style>
+    </div>
   </body>
 </html>
